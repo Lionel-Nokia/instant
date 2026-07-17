@@ -1,1 +1,1 @@
-prinf("Hello, World!")
+print("Hello, Lionet!")
