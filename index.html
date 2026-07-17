@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arena FPS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <div id="crosshair">+</div>
+    <div id="stats">
+      <div>Your HP: <span id="player-hp">100</span></div>
+      <div>Enemy HP: <span id="enemy-hp">100</span></div>
+    </div>
+    <div id="message"></div>
+  </div>
+
+  <div id="overlay">
+    <h1>Arena FPS</h1>
+    <p>Survive and defeat the enemy bot in the arena.</p>
+    <ul>
+      <li><kbd>↑</kbd> / <kbd>↓</kbd> — Move forward / backward</li>
+      <li><kbd>←</kbd> / <kbd>→</kbd> — Turn left / right</li>
+      <li><kbd>Space</kbd> — Shoot</li>
+    </ul>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
